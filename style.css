@@ -18,6 +18,9 @@ body{
     margin: 5px;
     border-bottom: 1px black solid;
     text-transform: capitalize;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
 }
 .navbar-s1__heading{
     color: #A435F0;
