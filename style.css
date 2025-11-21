@@ -19,7 +19,7 @@ body{
     border-bottom: 1px black solid;
     text-transform: capitalize;
     position: sticky;
-    top: 10px;
+    top: 0px;
     z-index: 1;
 }
 .navbar-s1__heading{
