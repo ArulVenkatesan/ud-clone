@@ -47,6 +47,24 @@ body{
     justify-content: center;
     font-size: 17px;
 }
+.my-learning{
+    position: relative;
+    cursor: pointer;
+}
+.my-learning__popup{
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    top: 150%;
+    right: 0%;
+    width: 100px;
+    display: none;
+}
+.my-learning:hover .my-learning__popup{
+    display: block;
+}
+
 .categories{
     display: flex;
     justify-content: space-around;
@@ -60,8 +78,21 @@ body{
     border-radius: 30px;
     text-transform: capitalize;
 }
+.intro-img{
+    position: relative;
+    text-transform: capitalize;
+}
 .intro-img img{
    width: 100%; 
+}
+.intro-img__offer{
+    width: 34%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.intro-img__offer h1{
+    margin-bottom: 10px;
 }
 .recommended{
     padding: 10px;
