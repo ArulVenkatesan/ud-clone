@@ -80,6 +80,14 @@ body{
     padding: 10px;
     border-radius: 30px;
     text-transform: capitalize;
+     border: 1px solid #A435F0;
+}
+.categories p:hover{
+    transition: 0.30s;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #A435F0;
+    cursor: pointer;
 }
 .intro-img{
     position: relative;
@@ -90,9 +98,25 @@ body{
 }
 .intro-img__offer{
     width: 34%;
+    padding: 10px;
     position: absolute;
     top: 20%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    border: black 2px solid;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+       opacity: 0;
+       transform: scale(0);
+    }
+    100%{
+       opacity: 1;
+       transform: scale(1);
+    }
 }
 .intro-img__offer h1{
     margin-bottom: 10px;
