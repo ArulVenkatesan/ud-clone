@@ -50,6 +50,9 @@ body{
     justify-content: center;
     font-size: 17px;
 }
+.navbar-s4{
+    display: none;
+}
 .my-learning{
     position: relative;
     cursor: pointer;
@@ -97,11 +100,11 @@ body{
    width: 100%; 
 }
 .intro-img__offer{
-    width: 34%;
-    padding: 10px;
+    width: 36%;
+    padding: 5px;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 18%;
+    left: 8%;
     animation-name: zoom;
     animation-duration: 2s;
     border: black 2px solid;
@@ -136,8 +139,9 @@ body{
     gap: 10px;
 }
 .course-card{
-    width: 250px;
-    margin: 20px;
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 10px;
 }
 .course-card img{
     width: 100%;
@@ -191,4 +195,20 @@ body{
     justify-content: space-between;
     padding: 30px;
     align-items: center;
+}
+@media screen and (max-width:600px) {
+    body{
+        font-size: 10px;
+    }
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categories,.navbar-s2,.navbar-s3{
+        display: none;
+    }
+    .navbar-s4{
+        display: block;
+        position: absolute;
+        right: 5px;
+    }
 }
